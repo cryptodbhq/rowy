@@ -103,11 +103,11 @@ export const ProjectContextProvider: React.FC = ({ children }) => {
     const { tables } = settings;
     if (tables && userRoles) {
       const filteredTables = _sortBy(tables, "name")
-        .filter(
-          (table) =>
-            userRoles.includes("ADMIN") ||
-            table.roles.some((role) => userRoles.includes(role))
-        )
+        // .filter(
+        //   (table) =>
+        //     userRoles.includes("ADMIN") ||
+        //     table.roles.some((role) => userRoles.includes(role))
+        // )
         .map((table) => ({
           ...table,
           section: table.section ? table.section.trim() : "Other",

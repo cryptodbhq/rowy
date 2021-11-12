@@ -1,7 +1,7 @@
 {
-  "name": "Rowy",
+  "name": "CryptoDB",
   "version": "2.1.0",
-  "homepage": "https://rowy.io",
+  "homepage": "/",
   "repository": {
     "type": "git",
     "url": "https://github.com/rowyio/rowy.git"

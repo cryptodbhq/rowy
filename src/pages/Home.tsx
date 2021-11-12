@@ -130,6 +130,7 @@ export default function HomePage() {
     </Tooltip>
   );
 
+  // console.log("Tables: " + tables.length)
   if (tables.length === 0) {
     if (userRoles.includes("ADMIN"))
       return (
@@ -226,8 +227,8 @@ export default function HomePage() {
             component="h1"
             sx={{ pl: 2, cursor: "default" }}
           >
-            {query ? `${results.length} of ${tables.length}` : tables.length}{" "}
-            tables
+            {/* {query ? `${results.length} of ${tables.length}` : tables.length}{" "}
+            tables */}
           </Typography>
 
           <ToggleButtonGroup

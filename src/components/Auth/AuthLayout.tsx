@@ -54,11 +54,7 @@ export default function AuthLayout({
           visibility: hideLogo ? "hidden" : "visible",
         }}
       >
-        <a
-          href={EXTERNAL_LINKS.homepage}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={EXTERNAL_LINKS.homepage} rel="noopener noreferrer">
           <Logo />
         </a>
       </div>

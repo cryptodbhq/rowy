@@ -9,7 +9,7 @@ import {
   Button,
 } from "@mui/material";
 import GoIcon from "assets/icons/Go";
-
+import { LocalGasStation, TrackChanges, Language } from "@mui/icons-material";
 import { Table } from "contexts/ProjectContext";
 
 export interface ITableCardProps extends Table {
@@ -38,12 +38,22 @@ export default function TableCard({
         to={link}
       >
         <CardContent>
-          <Typography variant="overline" component="p">
+          {/* <Typography variant="overline" component="p">
             {section}
-          </Typography>
-          <Typography variant="h6" component="h3" gutterBottom>
+          </Typography> */}
+          <Typography component="h6" gutterBottom>
             {name}
           </Typography>
+          <div style={{ fontSize: "10px" }}>
+            <LocalGasStation style={{ verticalAlign: "middle" }} />
+            FeeToken: Ether <br />
+            <Language style={{ verticalAlign: "middle", paddingTop: "8px" }} />
+            ChainId: 1 <br />
+            <TrackChanges
+              style={{ verticalAlign: "middle", paddingTop: "8px" }}
+            />
+            Bip44: 60
+          </div>
           <Typography
             color="textSecondary"
             sx={{
